@@ -1,0 +1,370 @@
+  <div class="row">
+      <div class="col-md-12">
+          <div class="tabs tabs-primary">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a href="#popular1" data-toggle="tab" aria-expanded="false"><i class="fa fa-star"></i>Add Courier</a>
+              </li>
+              <li >
+                <a href="#recent1" data-toggle="tab" aria-expanded="true">View Record List</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="popular1" class="tab-pane  active">
+                <p>Add Item</p>
+                    <section class="panel">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="fa fa-caret-down"></a>
+                          <a href="#" class="fa fa-times"></a>
+                        </div>
+      
+            
+                      </header>
+                      <div class="panel-body">
+                        <div class="panel">
+                          <div class="panel-title">Basic Details</div>
+                        </div>
+                        <div class="panel-body panel-featured-left panel-featured-right">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-primary">
+                                          <i class="fa fa-user">Customer Name</i>
+                                        </span>
+                                        <input type="text" name="customerName" #customerName="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                      </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-primary">
+                                          <i>@ Email</i>
+                                        </span>
+                                        <input type="email" name="email" #email="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                      </div>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-primary">
+                                          <i>Phone Number</i>
+                                        </span>
+                                        <input type="text" name="phone" #phone="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                      </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-primary">
+                                          <i># Age</i>
+                                        </span>
+                                        <input type="text" name="age" #age="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                      </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <span class="input-group-addon btn-primary">
+                                          <i>Courier ID</i>
+                                        </span>
+                                        <input type="text" name="courierId" #courierId="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                      </div>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i>Mobile Number</i>
+                                          </span>
+                                          <input type="text" name="mobileNumber" #mobileNumber="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i>office Location</i>
+                                          </span>
+                                          <input type="text" name="officeLocation" #officeLocation="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                </div>
+                        </div>
+                      
+                      </div>
+                      <div class="panel-body">
+                          <div class="panel">
+                            <div class="panel-title">Customer Address</div>
+                          </div>
+                          <div class="panel-body panel-featured-left panel-featured-right">
+                              <div class="row">
+                                  <div class="col-sm-3">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i class="fa fa-user">City Name</i>
+                                          </span>
+                                          <input type="text" name="cityName" #cityName="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i class="fa fa-user">State</i>
+                                          </span>
+                                          <input type="text" name="state" #state="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i>Street</i>
+                                          </span>
+                                          <input type="text" name="street" #street="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i>Second Persion Phone Number</i>
+                                          </span>
+                                          <input type="text" name="secondPersionphone" #phone="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i># Door No</i>
+                                          </span>
+                                          <input type="text" name="doorNo" #doorNo="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-3">
+                                      <div class="input-group">
+                                          <span class="input-group-addon btn-primary">
+                                            <i>Pin Code</i>
+                                          </span>
+                                          <input type="text" name="pinCode" #pinCode="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                        </div>
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i>Full Address</i>
+                                            </span>
+                                            <textarea name="fullAddress" #fullAddress="ngModel" required ngModel class="form-control" placeholder="" required=""></textarea>
+                                          </div>
+                                    </div>
+                                  
+                                  </div>
+                          </div>
+                        
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel">
+                              <div class="panel-title">Item Details</div>
+                            </div>
+                            <div class="panel-body panel-featured-left panel-featured-right">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i class="fa fa-user">Courier Name</i>
+                                            </span>
+                                            <input type="text" name="courierName" #courierName="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i class="fa fa-user">Courier Id</i>
+                                            </span>
+                                            <input type="text" name="courierId" #courierId="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i>Item details</i>
+                                            </span>
+                                            <input type="text" name="cdetails" #cdetails="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i>Item Kg</i>
+                                            </span>
+                                            <input type="text" name="itemKg" #itemKg="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                          </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon btn-primary">
+                                              <i>Courier type</i>
+                                            </span>
+                                              <select name="courierType" #courierType="ngModel" ngModel class="form-control" required>
+                                                <option value="" disabled>Select</option>
+                                                <option value="bike">Bike</option>
+                                                <option value="car">Car</option>
+                                                <option value="cycle">Cycle</option>
+                                                <option value="others">Others</option>
+                                              </select>
+                                          </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                
+                            </div>
+                          
+                          </div>
+                          <div class="panel-body">
+                              <div class="panel">
+                                <div class="panel-title">Receiver Address</div>
+                              </div>
+                              <div class="panel-body panel-featured-left panel-featured-right">
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i class="fa fa-user">Receiver Name</i>
+                                              </span>
+                                              <input type="text" name="receiverName" #receiverName="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i>@ Email</i>
+                                              </span>
+                                              <input type="email" name="remail" #remail="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i>Phone Number</i>
+                                              </span>
+                                              <input type="text" name="rphone" #rphone="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i># Age</i>
+                                              </span>
+                                              <input type="text" name="rage" #rage="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon btn-primary">
+                                                  <i>Mobile Number</i>
+                                                </span>
+                                                <input type="text" name="rmobileNumber" #rmobileNumber="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                              </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+                                                <span class="input-group-addon btn-primary">
+                                                  <i>office Location</i>
+                                                </span>
+                                                <input type="text" name="rofficeLocation" #rofficeLocation="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                              </div>
+                                        </div>
+                                      </div>
+                                      <br>
+                                  <div class="row">
+                                      <div class="col-sm-3">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i class="fa fa-user">City Name</i>
+                                              </span>
+                                              <input type="text" name="cityName" #cityName="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i class="fa fa-user">State</i>
+                                              </span>
+                                              <input type="text" name="state" #state="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i>Street</i>
+                                              </span>
+                                              <input type="text" name="street" #street="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-sm-3">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i># Door No</i>
+                                              </span>
+                                              <input type="text" name="rdoorNo" #rdoorNo="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-3">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i>Pin Code</i>
+                                              </span>
+                                              <input type="text" name="rpinCode" #rpinCode="ngModel" required ngModel class="form-control" placeholder="" required="">
+                                            </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="input-group">
+                                              <span class="input-group-addon btn-primary">
+                                                <i>Full Address</i>
+                                              </span>
+                                              <textarea name="rfullAddress" #rfullAddress="ngModel" required ngModel class="form-control" placeholder="" required=""></textarea>
+                                            </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    
+                              </div>
+                            
+                            </div>
+                      <footer class="panel-footer">
+                        <button class="btn btn-primary">Submit Card</button>
+                      </footer>
+                    </section>
+              </div>
+
+
+
+
+
+
+
+              <div id="recent1" class="tab-pane">
+                <p>Recent</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>

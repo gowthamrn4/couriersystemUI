@@ -1,0 +1,196 @@
+
+ 
+
+
+      <!-- start: page -->
+      <div class="row">
+        <div class="col-md-6 col-lg-12 col-xl-6">
+          <div class="row">
+            <div class="col-md-12 col-lg-5 col-xl-6">
+              <section class="panel panel-featured-left panel-featured-right panel-featured-primary">
+                <div class="panel-body">
+                  <div class="widget-summary">
+                    <div class="widget-summary-col widget-summary-col-icon">
+                     
+                    </div>
+                    <div class="col-md-12">
+                      <form id="form"  name="adduserForm" #adduserForm="ngForm" (ngSubmit)="addUser(adduserForm.value)">
+                        <section class="panel">
+                          <header class="panel-heading">
+                            <div class="panel-actions">
+                              <a class="fa fa-caret-down"></a>
+                              <a class="fa fa-times"></a>
+                            </div>
+        
+                            <h2 class="panel-title">Add Employee</h2>
+                            <p class="panel-subtitle">
+                              Basic validation will display a label with the error after the form control.
+                            </p>
+                          </header>
+                          <div class="panel-body">
+                            <div class="form-group">
+                              <div class="col-sm-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-warning">
+                                    <i class="fa fa-user"></i>
+                                  </span>
+                                  <input type="text" name="name" #name="ngModel" ngModel class="form-control" placeholder="Employee Name...." required="">
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+        
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="col-sm-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-success">@</span>
+                                  <input type="email" name="email" #email="ngModel" ngModel class="form-control" placeholder="eg.: email@email.com" required="">
+                                </div>
+                              </div>
+                              <div class="col-sm-9">
+        
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="col-md-12 control-label">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-info">
+                                    <i class="fa fa-phone"></i>
+                                  </span>
+                                  <input id="phone" #phone="ngModel" name="phone" ngModel data-plugin-masked-input="" data-input-mask="(999) 999-9999" placeholder="(123) 123-1234" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+                           
+                            <div class="form-group">
+                              <div class="col-md-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-danger">
+                                    <i class="fa fa-calendar"></i>
+                                  </span>
+                                  <input id="date" #dateOfBirth="ngModel" ngModel name="dateOfBirth" data-plugin-masked-input="" data-input-mask="99/99/9999" placeholder="__/__/____" class="form-control">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="col-md-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-dark">
+                                    <i class="fa fa-key"></i>
+                                  </span>
+                                  <input type="password" #password="ngModel" ngModel name="password" class="form-control" placeholder="********" required="">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="col-md-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon btn-primary">
+                                    <i class="fa fa-location-arrow"></i>
+                                  </span>
+                                  <select #officeLocation="ngModel" ngModel name="officeLocation" class="form-control">
+                                    <option value="" disabled>Select</option>
+                                    <option *ngFor="let loc of location" value="{{loc.name}}">{{loc.name}}</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="col-sm-12">
+                                <textarea name="address" #address="ngModel" ngModel rows="5" class="form-control" placeholder="Employee Address...." required=""></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <footer class="panel-footer">
+                            <div class="row">
+                              <div class="col-sm-9 col-sm-offset-3">
+                                <button class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-default">Reset</button>
+                              </div>
+                            </div>
+                          </footer>
+                        </section>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-md-12 col-lg-7 col-xl-6">
+              <section class="panel panel-featured-right panel-featured-left panel-featured-primary">
+                <div class="panel-body">
+                  <div class="widget-summary">
+                    <div class="widget-summary-col widget-summary-col-icon">
+                      
+                    </div>
+                    <section class="panel">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a  class="fa fa-caret-down"></a>
+                          <a  class="fa fa-times"></a>
+                        </div>
+                
+                        <h2 class="panel-title">Employee List</h2>
+                        <p class="panel-subtitle">
+                          Basic validation will display a label with the error after the form control.
+                        </p>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon btn-primary">
+                              <i class="fa fa-location-arrow"></i>
+                            </span>
+                            <select #officeLocation="ngModel" ngModel name="officeLocation" (change)="findUser(officeLocation.value)" class="form-control">
+                              <option value="" disabled>Find Employee</option>
+                              <option *ngFor="let loc of location" value="{{loc.name}}">{{loc.name}}</option>
+                            </select>
+                          </div>
+                      </header>
+                      <div class="panel-body">
+                        <div class="table-responsive">
+                          <table class="table table-condensed mb-none">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email Id</th>
+                                <th>Phone Number</th>
+                                <th>Password</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let data of employee;let i=index;">
+                                <td>{{i+1}}</td>
+                                <td>{{data.name}}</td>
+                                <td>{{data.email}}</td>
+                                <td>{{data.phone}}</td>
+                                <td>{{data.password}}</td>
+                                <td><i (click)="del(data)" class="fa fa-times-circle "></i></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="alert alert-danger" *ngIf="employee==0">No Records Found.....</div>
+                        </div>
+                      </div>
+                    </section>
+
+
+                  </div>
+                </div>
+              </section>
+            </div>
+         
+          </div>
+        </div>
+      </div>
+
+      <ngx-spinner [visible]="showSpinner" [config]="spinnerConfig"></ngx-spinner>
+
+     
+     
+      <!-- end: page -->

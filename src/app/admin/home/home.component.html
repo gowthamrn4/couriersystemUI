@@ -1,0 +1,256 @@
+
+    <section role="main" class="content-body">
+     
+
+
+      <!-- start: page -->
+      <div class="row">
+        <div class="col-md-6 col-lg-12 col-xl-6">
+          <section class="panel">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="chart-data-selector" id="salesSelectorWrapper">
+                  
+
+                    <div id="salesSelectorItems" class="chart-data-selector-items mt-sm">
+                      <!-- Flot: Sales JSOFT Admin -->
+                      <div class="chart chart-sm" data-sales-rel="JSOFT Admin" id="flotDashSales1" class="chart-active"></div>
+                      <script>
+
+                        var flotDashSales1Data = [{
+                            data: [
+                                ["Jan", 140],
+                                ["Feb", 240],
+                                ["Mar", 190],
+                                ["Apr", 140],
+                                ["May", 180],
+                                ["Jun", 320],
+                                ["Jul", 270],
+                                ["Aug", 180]
+                            ],
+                            color: "#0088cc"
+                        }];
+
+                        // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+
+                      </script>
+
+                      <!-- Flot: Sales JSOFT Drupal -->
+                      <div class="chart chart-sm" data-sales-rel="JSOFT Drupal" id="flotDashSales2" class="chart-hidden"></div>
+                      <script>
+
+                        var flotDashSales2Data = [{
+                            data: [
+                                ["Jan", 240],
+                                ["Feb", 240],
+                                ["Mar", 290],
+                                ["Apr", 540],
+                                ["May", 480],
+                                ["Jun", 220],
+                                ["Jul", 170],
+                                ["Aug", 190]
+                            ],
+                            color: "#2baab1"
+                        }];
+
+                        // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+
+                      </script>
+
+                      <!-- Flot: Sales JSOFT Wordpress -->
+                      <div class="chart chart-sm" data-sales-rel="JSOFT Wordpress" id="flotDashSales3" class="chart-hidden"></div>
+                      <script>
+
+                        var flotDashSales3Data = [{
+                            data: [
+                                ["Jan", 840],
+                                ["Feb", 740],
+                                ["Mar", 690],
+                                ["Apr", 940],
+                                ["May", 1180],
+                                ["Jun", 820],
+                                ["Jul", 570],
+                                ["Aug", 780]
+                            ],
+                            color: "#734ba9"
+                        }];
+
+                        // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+
+                      </script>
+                    </div>
+
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-md-6 col-lg-12 col-xl-6">
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-6">
+              <section class="panel panel-featured-left panel-featured-primary">
+                  <div class="panel-body">
+                      <div class="row">
+                        <div class="col-lg-8">
+                          <div class="chart-data-selector ready" id="salesSelectorWrapper">
+                            <h2>
+                              Sales:
+                              <strong>
+                                <select class="form-control" id="salesSelector" style="display: none;">
+                                  <option value="JSOFT Admin" selected="">JSOFT Admin</option>
+                                  <option value="JSOFT Drupal">JSOFT Drupal</option>
+                                  <option value="JSOFT Wordpress">JSOFT Wordpress</option>
+                                </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown" title="JSOFT Admin" aria-expanded="false">JSOFT Admin <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a href="javascript:void(0);"><label class="radio"><input type="radio" name="multiselect" value="JSOFT Admin"> JSOFT Admin</label></a></li><li class=""><a href="javascript:void(0);"><label class="radio"><input type="radio" name="multiselect" value="JSOFT Drupal"> JSOFT Drupal</label></a></li><li class=""><a href="javascript:void(0);"><label class="radio"><input type="radio" name="multiselect" value="JSOFT Wordpress"> JSOFT Wordpress</label></a></li></ul></div>
+                              </strong>
+                            </h2>
+    
+                            <div id="salesSelectorItems" class="chart-data-selector-items mt-sm">
+                              <!-- Flot: Sales JSOFT Admin -->
+                              <div class="chart chart-sm chart-active" data-sales-rel="JSOFT Admin" id="flotDashSales1" style="padding: 0px;"><canvas class="flot-base" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 27px; text-align: center;">Jan</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 114px; text-align: center;">Feb</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 202px; text-align: center;">Mar</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 291px; text-align: center;">Apr</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 378px; text-align: center;">May</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 469px; text-align: center;">Jun</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 560px; text-align: center;">Jul</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 645px; text-align: center;">Aug</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 14px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 101px; left: 1px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 68px; left: 1px; text-align: right;">200</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 34px; left: 1px; text-align: right;">300</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">400</div></div></div><canvas class="flot-overlay" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas></div>
+                              <script>
+    
+                                var flotDashSales1Data = [{
+                                    data: [
+                                        ["Jan", 140],
+                                        ["Feb", 240],
+                                        ["Mar", 190],
+                                        ["Apr", 140],
+                                        ["May", 180],
+                                        ["Jun", 320],
+                                        ["Jul", 270],
+                                        ["Aug", 180]
+                                    ],
+                                    color: "#0088cc"
+                                }];
+    
+                                // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+    
+                              </script>
+    
+                              <!-- Flot: Sales JSOFT Drupal -->
+                              <div class="chart chart-sm chart-hidden" data-sales-rel="JSOFT Drupal" id="flotDashSales2" style="padding: 0px;"><canvas class="flot-base" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 27px; text-align: center;">Jan</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 114px; text-align: center;">Feb</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 202px; text-align: center;">Mar</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 291px; text-align: center;">Apr</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 378px; text-align: center;">May</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 469px; text-align: center;">Jun</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 560px; text-align: center;">Jul</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 645px; text-align: center;">Aug</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 14px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 113px; left: 1px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 90px; left: 1px; text-align: right;">200</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 68px; left: 1px; text-align: right;">300</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 45px; left: 1px; text-align: right;">400</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 23px; left: 1px; text-align: right;">500</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">600</div></div></div><canvas class="flot-overlay" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas></div>
+                              <script>
+    
+                                var flotDashSales2Data = [{
+                                    data: [
+                                        ["Jan", 240],
+                                        ["Feb", 240],
+                                        ["Mar", 290],
+                                        ["Apr", 540],
+                                        ["May", 480],
+                                        ["Jun", 220],
+                                        ["Jul", 170],
+                                        ["Aug", 190]
+                                    ],
+                                    color: "#2baab1"
+                                }];
+    
+                                // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+    
+                              </script>
+    
+                              <!-- Flot: Sales JSOFT Wordpress -->
+                              <div class="chart chart-sm chart-hidden" data-sales-rel="JSOFT Wordpress" id="flotDashSales3" style="padding: 0px;"><canvas class="flot-base" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 33px; text-align: center;">Jan</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 120px; text-align: center;">Feb</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 206px; text-align: center;">Mar</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 295px; text-align: center;">Apr</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 381px; text-align: center;">May</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 471px; text-align: center;">Jun</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 560px; text-align: center;">Jul</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 75px; top: 161px; left: 645px; text-align: center;">Aug</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 135px; left: 20px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 108px; left: 7px; text-align: right;">250</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 81px; left: 7px; text-align: right;">500</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 54px; left: 7px; text-align: right;">750</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 27px; left: 1px; text-align: right;">1000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 0px; left: 1px; text-align: right;">1250</div></div></div><canvas class="flot-overlay" width="665" height="184" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 665px; height: 184px;"></canvas></div>
+                              <script>
+    
+                                var flotDashSales3Data = [{
+                                    data: [
+                                        ["Jan", 840],
+                                        ["Feb", 740],
+                                        ["Mar", 690],
+                                        ["Apr", 940],
+                                        ["May", 1180],
+                                        ["Jun", 820],
+                                        ["Jul", 570],
+                                        ["Aug", 780]
+                                    ],
+                                    color: "#734ba9"
+                                }];
+    
+                                // See: assets/javascripts/dashboard/examples.dashboard.js for more settings.
+    
+                              </script>
+                            </div>
+    
+                          </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                          <h2 class="panel-title mt-md">Sales Goal</h2>
+                          <div class="liquid-meter-wrapper liquid-meter-sm mt-lg">
+                            <div class="liquid-meter liquid-meter-loaded"><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 220 220" width="100%" height="100%"><desc>Created with Snap</desc><defs><linearGradient x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse" id="Sjs4m66ex2"><stop offset="0%" stop-color="#ffffff"></stop><stop offset="100%" stop-color="#f9f9f9"></stop></linearGradient><mask id="Sjs4m66ex8"><circle cx="110" cy="110" r="87" fill="#ffffff" style=""></circle></mask></defs><circle cx="110" cy="110" r="95" fill="url('#Sjs4m66ex2')" stroke="#f2f2f2" style="stroke-width: 15;"></circle><path id="front" fill="#0088cc" mask="url('#Sjs4m66ex8')" stroke="#33bbff" style="stroke-width: 1;" d="M0,147.4 C103.4,128.4 177.4,128.4 220,126.4 L220,220 L0,220 z"></path><text x="50%" y="50%" fill="#333333" dy=".4em" stroke="#333333" style="font-family:Open Sans; font-size: 24px; font-weight: 600; text-anchor: middle;">35%</text></svg>
+                              <meter min="0" max="100" value="35" id="meterSales"></meter>
+                            </div>
+                            <div class="liquid-meter-selector" id="meterSalesSel">
+                              <a href="#" data-val="35" class="active">Monthly Goal</a>
+                              <a href="#" data-val="28" class="">Annual Goal</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </section>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+    
+    
+        <div class="col-xl-6 col-lg-12">
+          <section class="panel">
+            <header class="panel-heading panel-heading-transparent">
+              <div class="panel-actions">
+                <a href="#" class="fa fa-caret-down"></a>
+                <a href="#" class="fa fa-times"></a>
+              </div>
+
+              <h2 class="panel-title">Company Activity</h2>
+            </header>
+            <div class="panel-body">
+              <div class="timeline timeline-simple mt-xlg mb-md">
+                <div class="tm-body">
+                  <div class="tm-title">
+                    <h3 class="h5 text-uppercase">November 2013</h3>
+                  </div>
+                  <ol class="tm-items">
+                    <li>
+                      <div class="tm-box">
+                        <p class="text-muted mb-none">7 months ago.</p>
+                        <p>
+                          It's awesome when we find a good solution for our projects, JSOFT Admin is <span class="text-primary">#awesome</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tm-box">
+                        <p class="text-muted mb-none">7 months ago.</p>
+                        <p>
+                          Checkout! How cool is that!
+                        </p>
+                        <div class="thumbnail-gallery">
+                          <a class="img-thumbnail lightbox" href="assets/images/projects/project-4.jpg" data-plugin-options='{ "type":"image" }'>
+                            <img class="img-responsive" width="215" src="assets/images/projects/project-4.jpg">
+                            <span class="zoom">
+                              <i class="fa fa-search"></i>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+   
+      <!-- end: page -->
+    </section>
